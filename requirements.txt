@@ -7,3 +7,4 @@ pydantic
 jinja2
 watchfiles
 requests
+firebase_admin
