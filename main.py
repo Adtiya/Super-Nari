@@ -31,5 +31,5 @@ app.include_router(runtime_checker, prefix="/runtime")
 app.include_router(export_router, prefix="/agent")
 app.include_router(memory_router, prefix="/memory")  # ⬅️ THIS now handles /view and /annotate
 app.include_router(asi_router, prefix="/asi")
-app.include_router(self_heal_router, prefix="/agent")
 app.include_router(memory_ai_router, prefix="/memory_ai")
+app.include_router(self_heal_router, prefix="/self-heal")
