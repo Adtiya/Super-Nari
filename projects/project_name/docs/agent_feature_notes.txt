@@ -1,0 +1,5 @@
+Plan for agent_feature
+1. Parse the feature.
+2. Define components.
+3. Code.
+4. Test.

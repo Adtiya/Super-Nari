@@ -1,0 +1,9 @@
+[
+  {
+    "feature_name": "SummarizerTest",
+    "created_at": "2025-05-14T08:24:48.449677",
+    "prompt": "Summarize the following text: 'Flutter is great.'",
+    "code": "def add(a, b):\n    return a + b  # for feature: SummarizerTest",
+    "status": "success"
+  }
+]

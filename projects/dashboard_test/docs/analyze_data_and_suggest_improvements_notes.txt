@@ -1,0 +1,5 @@
+Plan for Analyze data and suggest improvements
+1. Parse the feature.
+2. Define components.
+3. Code.
+4. Test.

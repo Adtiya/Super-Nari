@@ -1,0 +1,36 @@
+[2025-05-14 08:33:02.746753] 🚀 Starting Super NARI agent system test suite...
+[2025-05-14 08:33:02.746753] Testing /agent/run...
+[2025-05-14 08:33:14.590854] ✅ /agent/run passed
+[2025-05-14 08:33:14.590854] Testing /memory/save...
+[2025-05-14 08:33:16.644230] ❌ /memory/save failed: Failed /memory/save
+[2025-05-14 08:33:16.646740] Traceback (most recent call last):
+  File "C:\newnari\main\super_nari_test_agent_fixed.py", line 41, in test_backend_api
+    assert res.status_code == 200, "Failed /memory/save"
+AssertionError: Failed /memory/save
+
+[2025-05-14 08:33:16.646740] Testing /memory/test_project fetch...
+[2025-05-14 08:33:18.696321] ❌ /memory/test_project fetch failed: Failed /memory/test_project
+[2025-05-14 08:33:18.696321] Traceback (most recent call last):
+  File "C:\newnari\main\super_nari_test_agent_fixed.py", line 50, in test_backend_api
+    assert res.status_code == 200, "Failed /memory/test_project"
+AssertionError: Failed /memory/test_project
+
+[2025-05-14 08:33:18.696321] Checking Python version...
+[2025-05-14 08:33:18.712077] ✅ Python: Python 3.10.0
+[2025-05-14 08:33:18.786027] ✅ Node: v22.15.0
+[2025-05-14 08:33:18.788632] ❌ go runtime check failed: [WinError 2] The system cannot find the file specified
+[2025-05-14 08:33:18.790639] ❌ java runtime check failed: [WinError 2] The system cannot find the file specified
+[2025-05-14 08:33:18.790639] 🏁 Test suite complete.
+[2025-05-14 08:38:55.675356] 🚀 Starting Super NARI agent system test suite...
+[2025-05-14 08:38:55.675356] Testing /agent/run...
+[2025-05-14 08:39:08.436015] ✅ /agent/run passed
+[2025-05-14 08:39:08.436015] Testing /memory/save...
+[2025-05-14 08:39:10.471170] ✅ /memory/save passed
+[2025-05-14 08:39:10.471170] Testing /memory/test_project fetch...
+[2025-05-14 08:39:12.518255] ✅ /memory/test_project fetch passed
+[2025-05-14 08:39:12.518255] Checking Python version...
+[2025-05-14 08:39:12.535656] ✅ Python: Python 3.10.0
+[2025-05-14 08:39:12.560967] ✅ Node: v22.15.0
+[2025-05-14 08:39:12.560967] ❌ go runtime check failed: [WinError 2] The system cannot find the file specified
+[2025-05-14 08:39:12.565455] ❌ java runtime check failed: [WinError 2] The system cannot find the file specified
+[2025-05-14 08:39:12.566123] 🏁 Test suite complete.

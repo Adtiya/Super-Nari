@@ -1,0 +1,1 @@
+// Test for: multi agent that find best candidate

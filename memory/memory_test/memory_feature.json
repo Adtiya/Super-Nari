@@ -1,0 +1,8 @@
+{
+  "project": "memory_test",
+  "feature": "memory_feature",
+  "plan": "Sample plan",
+  "code": "print('Code')",
+  "test": "assert True",
+  "notes": "test save"
+}

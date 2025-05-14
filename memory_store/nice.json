@@ -1,0 +1,29 @@
+{
+  "travel tike feature from mumbait to delhi routes points": {
+    "plan": "from goa to mumbai",
+    "code": "",
+    "test": ""
+  },
+  "love screen": {
+    "plan": {
+      "plan": "Feature: love screen\n1. Break down UI structure.\n2. Identify input/output controls.\n3. Define layout and styling requirements.\n4. Design navigation or interaction flow."
+    },
+    "code": {
+      "code": "```dart\nimport 'package:flutter/material.dart';\n\nvoid main() {\n  runApp(const LoveScreen());\n}\n\nclass LoveScreen extends StatelessWidget {\n  const LoveScreen({Key? key}) : super(key: key);\n\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Love Screen',\n      theme: ThemeData(\n        primarySwatch: Colors.red,\n      ),\n      home: const Scaffold(\n        body: Center(\n          child: LoveUI(),\n        ),\n      ),\n    );\n  }\n}\n\nclass LoveUI extends StatelessWidget {\n  const LoveUI({Key? key}) : super(key: key);\n\n  @override\n  Widget build(BuildContext context) {\n    return Container(\n      padding: const EdgeInsets.all(10.0),\n      child: Column(\n        mainAxisAlignment: MainAxisAlignment.center,\n        children: <Widget>[\n          const Icon(\n            Icons.favorite,\n            color: Colors.red,\n            size: 60.0,\n          ),\n          const SizedBox(height: 10.0),\n          const Text(\n            'Love Screen',\n            style: TextStyle(fontSize: 24, color: Colors.red),\n          ),\n          const SizedBox(height: 20.0),\n          ElevatedButton(\n            onPressed: () {},\n            child: const Text('Click Here'),\n            style: ElevatedButton.styleFrom(\n              primary: Colors.red,\n              onPrimary: Colors.white,\n            ),\n          ),\n        ],\n      ),\n    );\n  }\n}\n```"
+    },
+    "test": {
+      "results": "Test cases run for 'love screen' - all passed"
+    }
+  },
+  "love": {
+    "plan": {
+      "plan": "Feature: love\n1. Break down UI structure.\n2. Identify input/output controls.\n3. Define layout and styling requirements.\n4. Design navigation or interaction flow."
+    },
+    "code": {
+      "code": "```dart\nimport 'package:flutter/material.dart';\n\nvoid main() {\n  runApp(MyApp());\n}\n\nclass MyApp extends StatelessWidget {\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Love Feature',\n      theme: ThemeData(\n        primarySwatch: Colors.red,\n      ),\n      home: LovePage(),\n    );\n  }\n}\n\nclass LovePage extends StatefulWidget {\n  @override\n  _LovePageState createState() => _LovePageState();\n}\n\nclass _LovePageState extends State<LovePage> {\n  // true if the heart is filled, false if it's just outlined\n  bool _isFavorited = false;\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(\n      // center everything\n      body: Center(\n        child: IconButton(\n          iconSize: 80,\n          icon: Icon(\n            _isFavorited\n              ? Icons.favorite\n              : Icons.favorite_border,\n          ),\n          color: _isFavorited\n            ? Colors.red\n            : Colors.black,\n          onPressed: _toggleFavorite,\n        ),\n      ),\n    );\n  }\n\n  void _toggleFavorite() {\n    setState(() {\n      _isFavorited = !_isFavorited;\n    });\n  }\n}\n```\nIn this code, I've created a new Flutter application that only contains one page: `LovePage`. This page consists of a large heart icon, which can be toggled between its filled and outlined versions using its `onPressed` event. The state of whether the heart is filled or not is kept in the `_isFavorited` variable. When this variable is updated, the widget is redrawn with either the `Icons.favorite` or `Icons.favorite_border` icon, and with either a red or black color."
+    },
+    "test": {
+      "results": "Test cases run for 'love' - all passed"
+    }
+  }
+}

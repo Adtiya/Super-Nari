@@ -1,0 +1,7 @@
+{
+  "love": {
+    "plan": "Feature: love\n1. Break down UI structure.\n2. Identify input/output controls.\n3. Define layout and styling requirements.\n4. Design navigation or interaction flow.",
+    "code": "\nimport 'package:flutter/material.dart';\n\nvoid main() => runApp(MyApp());\n\nclass MyApp extends StatelessWidget {\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      home: Scaffold(\n        appBar: AppBar(title: Text('Love Feature')),\n        body: Center(child: LoveWidget()),\n      ),\n    );\n  }\n}\n\nclass LoveWidget extends StatefulWidget {\n  @override\n  _LoveWidgetState createState() => _LoveWidgetState();\n}\n\nclass _LoveWidgetState extends State<LoveWidget> {\n  bool isLoved = false;\n\n  void _toggleLove() {\n    setState(() {\n      isLoved = !isLoved;\n    });\n  }\n\n  @override\n  Widget build(BuildContext context) {\n    return Column(\n      mainAxisAlignment: MainAxisAlignment.center,\n      children: <Widget>[\n        IconButton(\n          onPressed: _toggleLove,\n          color: isLoved ? Colors.red : Colors.grey,\n          icon: Icon(isLoved ? Icons.favorite : Icons.favorite_border),\n          iconSize: 100.0,\n        ),\n        Text(\n          isLoved ? \"You loved this\" : \"Press the heart to love\",\n          style: TextStyle(fontSize: 24.0),\n        ),\n      ],\n    );\n  }\n}\n",
+    "test": "No test generated."
+  }
+}

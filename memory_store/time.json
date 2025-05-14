@@ -1,0 +1,13 @@
+{
+  "init": {
+    "plan": {
+      "plan": "Planning for feature 'init' using methodology 'agile'"
+    },
+    "code": {
+      "code": "Generated code for 'init' using stack 'flutter'"
+    },
+    "test": {
+      "results": "Test cases run for 'init' - all passed"
+    }
+  }
+}
